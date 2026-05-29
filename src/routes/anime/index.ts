@@ -1,8 +1,8 @@
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 import { PROVIDERS_LIST } from '@consumet/extensions';
 
-import gogoanime from './gogoanime';
-import animepahe from './animepahe';
+import gogoanime from './gogoanime.ts';
+import animepahe from './animepahe.ts';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   await fastify.register(gogoanime, { prefix: '/' });
