@@ -1,4 +1,5 @@
-require('dotenv').config();
+import dotenv from "dotenv";
+dotenv.config();
 
 import Fastify from 'fastify';
 import FastifyCors from '@fastify/cors';
