@@ -1,7 +1,6 @@
 {
     "name": "consumet",
     "version": "1.0.0",
-    "type": "commonjs",
     "main": "src/main.ts",
     "scripts": {
         "start": "ts-node src/main.ts",
