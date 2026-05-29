@@ -3,13 +3,13 @@ require('dotenv').config();
 import Fastify from 'fastify';
 import FastifyCors from '@fastify/cors';
 
-import books from "./routes/books/index.js";
-import anime from "./routes/anime/index.js";
-import manga from "./routes/manga/index.js";
-import comics from "./routes/comics/index.js";
-import lightnovels from "./routes/light-novels/index.js";
-import movies from "./routes/movies/index.js";
-import meta from "./routes/meta/index.js";
+import books from "./routes/books/index.ts";
+import anime from "./routes/anime/index.ts";
+import manga from "./routes/manga/index.ts";
+import comics from "./routes/comics/index.ts";
+import lightnovels from "./routes/light-novels/index.ts";
+import movies from "./routes/movies/index.ts";
+import meta from "./routes/meta/index.ts";
 
 (async () => {
   const PORT = Number(process.env.PORT);
