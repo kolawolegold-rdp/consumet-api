@@ -1,4 +1,4 @@
-import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
+import type { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 import { MOVIES } from '@consumet/extensions';
 import { StreamingServers } from '@consumet/extensions/dist/models/index.js';
 

@@ -1,5 +1,5 @@
 import { COMICS } from '@consumet/extensions';
-import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
+import type { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   fastify.get('/s', async (request: FastifyRequest, reply: FastifyReply) => {

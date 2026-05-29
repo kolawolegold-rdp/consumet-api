@@ -1,4 +1,4 @@
-import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
+import type { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 import getComics from './getComics.ts';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
