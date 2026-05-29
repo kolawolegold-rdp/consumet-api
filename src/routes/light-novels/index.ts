@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 import { PROVIDERS_LIST } from '@consumet/extensions';
 
-import readlightnovels from './readlightnovels';
+import readlightnovels from './readlightnovels.ts';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   await fastify.register(readlightnovels, { prefix: '/' });
