@@ -1,5 +1,5 @@
 import { BOOKS } from '@consumet/extensions';
-import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
+import type { FastifyInstance, FastifyRequest, FastifyReply, FastifyPluginOptions } from 'fastify';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   const libgen = new BOOKS.Libgen();
