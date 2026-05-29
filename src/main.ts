@@ -3,7 +3,7 @@ require('dotenv').config();
 import Fastify from 'fastify';
 import FastifyCors from '@fastify/cors';
 
-import books from './routes/books';
+import books from "./routes/books/index.ts";
 import anime from './routes/anime';
 import manga from './routes/manga';
 import comics from './routes/comics';
