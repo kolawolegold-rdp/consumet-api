@@ -1,5 +1,5 @@
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
-import getComics from './getComics';
+import getComics from './getComics.ts';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   await fastify.register(getComics, { prefix: '/getComics' });
