@@ -1,8 +1,8 @@
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 import { PROVIDERS_LIST } from '@consumet/extensions';
 
-import mangadex from './mangadex';
-import mangahere from './mangahere';
+import mangadex from './mangadex.ts';
+import mangahere from './mangahere.ts';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   await fastify.register(mangadex, { prefix: '/' });
