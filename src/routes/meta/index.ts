@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 import { PROVIDERS_LIST } from '@consumet/extensions';
 
-import anilist from './anilist';
+import anilist from './anilist.ts';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   await fastify.register(anilist, { prefix: '/' });

@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
 import { PROVIDERS_LIST } from '@consumet/extensions';
 
-import flixhq from './flixhq';
+import flixhq from './flixhq.ts';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   await fastify.register(flixhq, { prefix: '/' });
